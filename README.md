@@ -2,8 +2,8 @@
 My linux dot files
 
 ## Dotfile management options
-- dotbot (✅ currently selected option)
-- chezmoi
+- dotbot
+- chezmoi (✅ currently selected option)
 - yadm
 - stow
 - git bare repo

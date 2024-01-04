@@ -1,0 +1,131 @@
+# Docs
+# https://www.nano-editor.org/dist/latest/nanorc.5.html
+bind ^A "{anchor}{firstline}{mark}{lastline}" all
+# ctrl + backspace
+bind ^H chopwordleft all
+# https://stackoverflow.com/questions/73615710/hidden-copy-paste-key-bindings-in-nano
+bind ^c "{execute}| xsel -ib {enter}{undo}" main
+bind ^v "{execute}| xsel -ob {enter}" main
+bind ^x "{execute}| xsel -ib {enter}" main
+# bind M-c copy all
+# bind M-v paste all
+# bind M-x cut all
+bind ^z undo all
+bind ^y redo all
+bind ^l lastline all
+bind ^f whereis all
+bind ^s savefile all
+bind ^n findnext all
+bind ^p findprevious all
+bind ^e execute all
+bind ^r replace all
+bind ^q exit all
+bind ^b browser writeout
+bind ^w writeout all
+set titlecolor bold,italic,green,black
+set functioncolor bold,italic,green
+set keycolor bold,italic,yellow
+set numbercolor bold,italic,yellow,black
+set scrollercolor bold,italic,green,black
+set statuscolor bold,italic,red
+set stripecolor bold,italic,purple,black
+set afterends
+set wordbounds
+set atblanks
+set softwrap
+set autoindent
+set indicator
+set mouse
+set zap
+set linenumbers
+
+include "~/.nano/apacheconf.nanorc"
+include "~/.nano/arduino.nanorc"
+include "~/.nano/asciidoc.nanorc"
+include "~/.nano/asm.nanorc"
+include "~/.nano/awk.nanorc"
+include "~/.nano/c.nanorc"
+include "~/.nano/clojure.nanorc"
+include "~/.nano/cmake.nanorc"
+include "~/.nano/coffeescript.nanorc"
+include "~/.nano/colortest.nanorc"
+include "~/.nano/conf.nanorc"
+include "~/.nano/csharp.nanorc"
+include "~/.nano/css.nanorc"
+include "~/.nano/cython.nanorc"
+include "~/.nano/dot.nanorc"
+include "~/.nano/dotenv.nanorc"
+include "~/.nano/email.nanorc"
+include "~/.nano/Dockerfile.nanorc"
+include "~/.nano/etc-hosts.nanorc"
+include "~/.nano/fish.nanorc"
+include "~/.nano/fortran.nanorc"
+include "~/.nano/gentoo.nanorc"
+include "~/.nano/git.nanorc"
+include "~/.nano/gitcommit.nanorc"
+include "~/.nano/glsl.nanorc"
+include "~/.nano/go.nanorc"
+include "~/.nano/gradle.nanorc"
+include "~/.nano/groff.nanorc"
+include "~/.nano/haml.nanorc"
+include "~/.nano/haskell.nanorc"
+include "~/.nano/html.nanorc"
+include "~/.nano/html.j2.nanorc"
+include "~/.nano/ical.nanorc"
+include "~/.nano/ini.nanorc"
+include "~/.nano/inputrc.nanorc"
+include "~/.nano/jade.nanorc"
+include "~/.nano/java.nanorc"
+include "~/.nano/javascript.nanorc"
+include "~/.nano/js.nanorc"
+include "~/.nano/json.nanorc"
+include "~/.nano/keymap.nanorc"
+include "~/.nano/kickstart.nanorc"
+include "~/.nano/kotlin.nanorc"
+include "~/.nano/ledger.nanorc"
+include "~/.nano/lisp.nanorc"
+include "~/.nano/lua.nanorc"
+include "~/.nano/makefile.nanorc"
+include "~/.nano/man.nanorc"
+include "~/.nano/markdown.nanorc"
+include "~/.nano/mpdconf.nanorc"
+include "~/.nano/mutt.nanorc"
+include "~/.nano/nanorc.nanorc"
+include "~/.nano/nginx.nanorc"
+include "~/.nano/nmap.nanorc"
+include "~/.nano/ocaml.nanorc"
+include "~/.nano/patch.nanorc"
+include "~/.nano/peg.nanorc"
+include "~/.nano/perl.nanorc"
+include "~/.nano/perl6.nanorc"
+include "~/.nano/php.nanorc"
+include "~/.nano/pkg-config.nanorc"
+include "~/.nano/pkgbuild.nanorc"
+include "~/.nano/po.nanorc"
+include "~/.nano/pov.nanorc"
+include "~/.nano/privoxy.nanorc"
+include "~/.nano/puppet.nanorc"
+include "~/.nano/pug.nanorc"
+include "~/.nano/python.nanorc"
+include "~/.nano/reST.nanorc"
+include "~/.nano/rpmspec.nanorc"
+include "~/.nano/ruby.nanorc"
+include "~/.nano/rust.nanorc"
+include "~/.nano/scala.nanorc"
+include "~/.nano/sed.nanorc"
+include "~/.nano/sh.nanorc"
+include "~/.nano/sls.nanorc"
+include "~/.nano/sql.nanorc"
+include "~/.nano/svn.nanorc"
+include "~/.nano/swift.nanorc"
+include "~/.nano/systemd.nanorc"
+include "~/.nano/tcl.nanorc"
+include "~/.nano/tex.nanorc"
+include "~/.nano/vala.nanorc"
+include "~/.nano/verilog.nanorc"
+include "~/.nano/vi.nanorc"
+include "~/.nano/xml.nanorc"
+include "~/.nano/xresources.nanorc"
+include "~/.nano/yaml.nanorc"
+include "~/.nano/yum.nanorc"
+include "~/.nano/zsh.nanorc"
