@@ -29,7 +29,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
+zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
@@ -145,7 +145,7 @@ alias lt="exa --long --header --icons --git --tree --level=3 --sort=modified --g
 alias ll="exa --long --header --icons --git --sort=modified"
 # git log repalcement
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
-# search through all available packages, with package info shown in a preview window, and then install selected packages:
+# search through all available packages, with package info shown in a preview window, and then install selected packages (you can select packages by hitting the tab button):
 alias pacmani="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 
 # zsh-autocomplete
