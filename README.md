@@ -12,6 +12,8 @@ My linux dot files
 ```
 .zshrc
 .config/kitty/*
-.oh-my-zsh/custom/*
+.oh-my-zsh/*
 .nanorc
+.dir_colors
+.p10k.zsh
 ```
