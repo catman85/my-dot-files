@@ -80,6 +80,7 @@ plugins=(
  	zsh-shift-select
 	zsh-syntax-highlighting
 	zsh-autosuggestions
+	zsh-completions
 )
 
 # Path to your oh-my-zsh installation.
@@ -153,7 +154,6 @@ source ~/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # thefuck alias overwrite
 eval $(thefuck --alias)
-eval $(thefuck --alias fix)
 
 # fzf config
 # allows fzf to search for hidden files
@@ -167,3 +167,23 @@ export FZF_DEFAULT_OPTS="--height 60% --layout=reverse --border --filepath-word 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# history config
+HISTFILE="$HOME/.zsh_history"
+# Display timestamps for each command
+HIST_STAMPS="%T %d.%m.%y"
+HISTSIZE=10000000
+SAVEHIST=10000000
+# Ignore these commands in history
+HISTORY_IGNORE="(ls|pwd|cd)*"
+# Write the history file in the ':start:elapsed;command' format.
+setopt EXTENDED_HISTORY
+# Do not record an event starting with a space.
+setopt HIST_IGNORE_SPACE
+# Don't store history commands
+setopt HIST_NO_STORE
+
+source /home/jim/.config/broot/launcher/bash/br
+
+# ctrl + r replacement tool
+eval "$(mcfly init zsh)"
