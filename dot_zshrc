@@ -133,19 +133,26 @@ bindkey -M shift-select '^[[118;6u' yank
 # usage: search word, search word filename.txt
 # alias search="ack --ignore-case --with-filename -B 1 -A 5"
 alias search="rg -B 1 -A 5 --pretty"
+
 # list the current folder and sort by size
 alias sizeanalyze="du -h --max-depth=1 | sort -hr"
+
 # select a process to kill, powered by fzf
 alias pk="ps aux --sort=-%cpu | sed 1d | fzf -m | awk '{print $2}' | xargs kill"
-# exa aliases
-# list -al with colors
-alias la="exa --all --long --header --icons --git --sort=modified"
-# list all files in tree view
-alias lt="exa --long --header --icons --git --tree --level=3 --sort=modified --git-ignore"
+
+# lsd(exa replacement) aliases
 # list files
-alias ll="exa --long --header --icons --git --sort=modified"
-# git log repalcement
+alias ll="lsd --long --header --human-readable --icon always --icon-theme unicode --git --timesort --group-dirs first"
+
+# list all files in tree view
+alias lt="ll --tree --depth 3"
+
+# list -al with colors
+alias la="ll --all"
+
+# git log replacement
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
+
 # search through all available packages, with package info shown in a preview window, and then install selected packages (you can select packages by hitting the tab button):
 alias pacmani="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 
