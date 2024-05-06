@@ -190,7 +190,9 @@ setopt HIST_IGNORE_SPACE
 # Don't store history commands
 setopt HIST_NO_STORE
 
-source /home/jim/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br
 
 # ctrl + r replacement tool
 eval "$(mcfly init zsh)"
+
+source /Users/jimvas/.config/broot/launcher/bash/br
