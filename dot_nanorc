@@ -39,6 +39,7 @@ set mouse
 set zap
 set linenumbers
 
+# https://github.com/scopatz/nanorc
 include "~/.nano/apacheconf.nanorc"
 include "~/.nano/arduino.nanorc"
 include "~/.nano/asciidoc.nanorc"
