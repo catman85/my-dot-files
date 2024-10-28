@@ -104,6 +104,11 @@ export LANG=en_US.UTF-8
 # Preferred editor for local and remote sessions
 export EDITOR='nano'
 
+# adding the gem user directory to path so that you can execute gem
+# scripts globally
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -186,7 +191,7 @@ setopt HIST_IGNORE_SPACE
 # Don't store history commands
 setopt HIST_NO_STORE
 
-source ~/.config/broot/launcher/bash/br
+source ~/.config/broot/launcher/bash/br 
 
 # ctrl + r replacement tool
 eval "$(mcfly init zsh)"

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# https://github.com/RMNCLDYO/groq-ai-toolkit
+# https://github.com/ttscoff/mdless
+# you might need to setup a py env in the repository's folder 
+# to not install it's dependencies globally
+# you put the api key in a .env file inside the repo's folder
+# you can put this script under /usr/bin/grcli to make it available, or as an alias
+
+# Check if parameter is passed
+if [ -z "$1" ]; then
+    echo "Usage: $0 'text prompt to query the model'"
+    exit 1
+fi
+
+# Run command_a and wait for 3 seconds
+groq_output=$(~/Documents/groq-ai-toolkit/bin/python ~/Documents/groq-ai-toolkit/cli.py --text --prompt "$1" --max_tokens 2048 --model llama-3.2-90b-vision-preview)
+
+# Process the output: remove first 3 and last 1 line
+processed_output=$(echo "$groq_output" | tail -n +10 | head -n -1)
+
+# Pass processed output to command_b with the parameter provided
+echo "$processed_output" | mdless
