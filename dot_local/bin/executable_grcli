@@ -14,7 +14,7 @@ if [ -z "$1" ]; then
 fi
 
 # Run command_a and wait for 3 seconds
-groq_output=$(~/Documents/groq-ai-toolkit/bin/python ~/Documents/groq-ai-toolkit/cli.py --text --prompt "$1" --max_tokens 2048 --model llama-3.2-90b-vision-preview)
+groq_output=$(~/Documents/groq-ai-toolkit/bin/python ~/Documents/groq-ai-toolkit/cli.py --text --prompt "$1" --temperature 0.1  --max_tokens 2048 --model "llama-3.1-8b-instant")
 
 # Process the output: remove first 3 and last 1 line
 processed_output=$(echo "$groq_output" | tail -n +10 | head -n -1)
