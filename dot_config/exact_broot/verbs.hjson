@@ -33,6 +33,22 @@ verbs: [
         leave_broot: false
     }
 
+    {
+	invocation: openeditleave
+	key: enter
+	execution: "$EDITOR +{line} {file}"
+	leave_broot: true
+	apply_to: file
+    }
+
+    {
+   	invocation: openeditleave
+	key: alt-enter
+	execution: "$EDITOR +{line} {file}"
+	leave_broot: true
+	apply_to: file
+    }
+
     # Example 1: launching `tail -n` on the selected file (leaving broot)
     # {
     #     name: tail_lines
