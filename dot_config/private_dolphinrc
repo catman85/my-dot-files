@@ -1,13 +1,13 @@
 MenuBar=Disabled
 
 [$Version]
-update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display,dolphin_directorysizemode.upd:convert-directorysizecount-to-directorysizemode
 
 [CompactMode]
 PreviewSize=32
 
 [ContentDisplay]
-DirectorySizeCount=false
+DirectorySizeMode=ContentSize
 UsePermissionsFormat=CombinedFormat
 
 [ContextMenu]
@@ -16,6 +16,11 @@ ShowOpenInNewTab=false
 
 [DetailsMode]
 PreviewSize=32
+
+[ExtractDialog]
+1600x900 screen: Height=540
+1600x900 screen: Width=1066
+DirHistory[$e]=$HOME/Downloads/
 
 [General]
 SortingChoice=CaseInsensitiveSorting
@@ -61,6 +66,3 @@ History=ardui,ardu
 
 [PreviewSettings]
 Plugins=appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,ffmpegthumbs
-
-[Search]
-Location=Everywhere
