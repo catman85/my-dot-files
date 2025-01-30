@@ -70,6 +70,9 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Auto updates will cause the ~/.oh-my-zsh directory to drift out of sync with chezmoi's source state. To update Oh My Zsh and its plugins, refresh the downloaded archives.
+DISABLE_AUTO_UPDATE="true"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -191,7 +194,7 @@ setopt HIST_IGNORE_SPACE
 # Don't store history commands
 setopt HIST_NO_STORE
 
-source ~/.config/broot/launcher/bash/br 
+# source ~/.config/broot/launcher/bash/br 
 
 # ctrl + r replacement tool
 eval "$(mcfly init zsh)"
