@@ -10,6 +10,3 @@ My linux dot files
 
 ## KDE files
 ### Install the papirus image pack from the icons kde menu and select ePapirus-Dark
-* ~/.config/
- * kglobalshortcutsrc
- * kdeglobals
