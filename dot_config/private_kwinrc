@@ -20,10 +20,15 @@ padding=4
 [Tiling][00b4acbd-caa1-508e-89a0-4efb616fdc32]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][af860c52-7a29-5937-8116-433ad3f3e4f8]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Xwayland]
 Scale=1.25
 
 [org.kde.kdecoration2]
+BorderSize=None
+BorderSizeAuto=false
 ButtonsOnLeft=N
 ButtonsOnRight=IAX
 library=org.kde.breeze
