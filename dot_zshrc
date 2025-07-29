@@ -187,6 +187,9 @@ alias la="ll --all"
 # git log replacement
 alias gll='git log --graph --pretty=oneline --abbrev-commit'
 
+# openrouter ai
+alias ai='bash ~/openrouter.ai/ai.sh'
+
 # search through all available packages, with package info shown in a preview window, and then install selected packages (you can select packages by hitting the tab button):
 alias pacmani="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
 

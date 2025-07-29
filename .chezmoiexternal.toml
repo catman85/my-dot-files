@@ -57,3 +57,9 @@
     exact = true
     stripComponents = 1
     refreshPeriod = "168h"
+["openrouter.ai"]
+    type = "archive"
+    url = "https://github.com/SynergOps/openrouter.ai/archive/main.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
