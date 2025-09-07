@@ -166,7 +166,7 @@ alias zshconfig="$EDITOR ~/.zshrc"
 # this alias searches for words in files recursively
 # usage: search word, search word filename.txt
 # alias search="ack --ignore-case --with-filename -B 1 -A 5"
-alias search="rg -B 1 -A 5 --pretty"
+alias search="rg -B 1 -A 5 -i --pretty"
 
 # list the current folder and sort by size
 alias sizeanalyze="du -h --max-depth=1 | sort -hr"
