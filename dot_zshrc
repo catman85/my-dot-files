@@ -102,7 +102,7 @@ export ZSH="$HOME/.oh-my-zsh"
 zsh-defer source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 zsh-defer source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zsh-defer source ~/.oh-my-zsh/custom/plugins/zsh-ctrl-shift-select/zsh-ctrl-shift-select.plugin.zsh
-# zsh-defer source ~/.config/broot/launcher/bash/br 
+zsh-defer source ~/.config/broot/launcher/bash/br 
 # thefuck alias overwrite
 zsh-defer eval $(thefuck --alias)
 
@@ -166,7 +166,8 @@ alias zshconfig="$EDITOR ~/.zshrc"
 # this alias searches for words in files recursively
 # usage: search word, search word filename.txt
 # alias search="ack --ignore-case --with-filename -B 1 -A 5"
-alias search="rg -B 1 -A 5 -i --pretty"
+alias searchword="rg -B 1 -A 5 -i --pretty"
+alias searchfiles='fzf | xargs -o nano'
 
 # list the current folder and sort by size
 alias sizeanalyze="du -h --max-depth=1 | sort -hr"
@@ -185,7 +186,10 @@ alias lt="ll --tree --depth 3"
 alias la="ll --all"
 
 # git log replacement
-alias gll='git log --graph --pretty=oneline --abbrev-commit'
+alias gl='git log --graph --pretty=oneline --abbrev-commit'
+# git diff replacement
+alias gd="git diff | diff-so-fancy"
+alias gs="git status"
 
 # openrouter ai
 alias ai='bash ~/openrouter.ai/ai.sh'

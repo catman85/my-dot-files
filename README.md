@@ -8,5 +8,7 @@ My linux dot files
 - stow (great for simple dot files but you cannot install git repos with it)
 - git bare repo
 
-## KDE files
-### Install the papirus image pack from the icons kde menu and select ePapirus-Dark
+## Installatoin
+1. Install chezmoi
+2. ```sh chezmoi init git@github.com:catman85/my-dot-files && chezmoi apply```
+3. Install the papirus image pack (the most popular one) from the icons kde menu and select Papirus-Dark
