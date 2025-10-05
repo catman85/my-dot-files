@@ -15,6 +15,10 @@ kzonesEnabled=true
 screenedgeEnabled=false
 wobblywindowsEnabled=true
 
+[Script-kzones]
+edgeSnappingTriggerDistance=2
+enableEdgeSnapping=true
+
 [Tiling]
 padding=4
 
@@ -29,6 +33,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 
 [Tiling][c7c6ade1-b6a7-5493-ba30-9416666c51e6]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Windows]
+ElectricBorderMaximize=false
+ElectricBorderTiling=false
 
 [Xwayland]
 Scale=1.1
