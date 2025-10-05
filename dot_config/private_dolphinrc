@@ -58,7 +58,6 @@ LVDS1 XPosition 1600x900=0
 LVDS1 YPosition 1280x720=20
 LVDS1 YPosition 1600x900=29
 MenuBar=Disabled
-ToolBarsMovable=Disabled
 
 [Open-with settings]
 CompletionMode=1

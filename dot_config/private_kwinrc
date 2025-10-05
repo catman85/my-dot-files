@@ -11,6 +11,7 @@ Active=true
 NightTemperature=4600
 
 [Plugins]
+kzonesEnabled=true
 screenedgeEnabled=false
 wobblywindowsEnabled=true
 
@@ -20,11 +21,17 @@ padding=4
 [Tiling][00b4acbd-caa1-508e-89a0-4efb616fdc32]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][28e5469e-94a1-5815-8db6-26277f6e18e3]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][af860c52-7a29-5937-8116-433ad3f3e4f8]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][c7c6ade1-b6a7-5493-ba30-9416666c51e6]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Xwayland]
-Scale=1.25
+Scale=1.1
 
 [org.kde.kdecoration2]
 BorderSize=None

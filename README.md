@@ -12,3 +12,4 @@ My linux dot files
 1. Install chezmoi
 2. ```sh chezmoi init git@github.com:catman85/my-dot-files && chezmoi apply```
 3. Install the papirus image pack (the most popular one) from the icons kde menu and select Papirus-Dark
+4. Install the Kzones Kwin script
