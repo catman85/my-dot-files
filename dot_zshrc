@@ -130,13 +130,9 @@ bindkey '5~' kill-word
 # ctrl + z
 bindkey '^Z' undo
 # ctrl shift c copy's selected text
-bindkey -M shift-select '^[[99;6u' copy-region-as-kill
+bindkey '^[[99;6u' copy-region-as-kill
 # ctrl shift v pastes selected text
-bindkey -M shift-select '^[[118;6u' yank
-
-# Bind both directions to the same widget
-bindkey '^[[1;5C' custom-jump-symbol  # Ctrl+Right
-bindkey '^[[1;5D' custom-jump-symbol  # Ctrl+Left
+bindkey '^[[118;6u' yank
 
 # zsh-autocomplete behavior
 # tab enters menu, and continues to cycle selections, same for shift-tab
