@@ -19,7 +19,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][1][Applets][18][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 popupHeight=450
 popupWidth=396
 
@@ -91,9 +91,9 @@ AppletOrder=2;4;5;6;18
 ItemGeometries-1829x1029=Applet-61:1183.43,736,272,272,0;Applet-60:1456,736,320,272,0;Applet-59:1296,16,480,720,0;
 ItemGeometries-2752x1152=Applet-59:1296,16,480,720,0;Applet-61:1184,736,272,272,0;Applet-60:1456,736,320,272,0;
 ItemGeometries-2991x1252=Applet-59:1296,16,480,720,0;Applet-61:1183.86,736,272,272,0;Applet-60:1456,736,320,272,0;
-ItemGeometries-3127x1309=Applet-59:1296,16,480,720,0;Applet-61:1184,736,272,272,0;Applet-60:1456,736,320,272,0;
+ItemGeometries-3127x1309=Applet-59:2608,32,480,720,0;Applet-61:2479.35,783.478,272,272,0;Applet-60:2768,784,320,272,0;
 ItemGeometries-3440x1440=Applet-59:1296,16,480,720,0;Applet-61:1184,736,272,272,0;Applet-60:1456,736,320,272,0;
-ItemGeometriesHorizontal=Applet-59:1296,16,480,720,0;Applet-61:1184,736,272,272,0;Applet-60:1456,736,320,272,0;
+ItemGeometriesHorizontal=Applet-59:2608,32,480,720,0;Applet-61:2479.35,783.478,272,272,0;Applet-60:2768,784,320,272,0;
 activityId=08192bf4-ba04-4447-8189-3fa3b3953b1a
 formfactor=0
 immutability=1
@@ -186,7 +186,7 @@ lowPrioritySensorIds=["memory/physical/total"]
 totalSensors=["memory/physical/usedPercent"]
 
 [Containments][57][General]
-positions={"1829x1029":[],"2991x1252":[]}
+positions={"1829x1029":[],"2991x1252":[],"3127x1309":[]}
 
 [Containments][7]
 activityId=
@@ -255,7 +255,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][7][Applets][24][Configuration]
-PreloadWeight=52
+PreloadWeight=36
 
 [Containments][7][Applets][48]
 immutability=1
@@ -273,7 +273,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][7][Applets][54][Configuration]
-PreloadWeight=70
+PreloadWeight=75
 
 [Containments][7][Applets][54][Configuration][General]
 migrated=true
@@ -293,7 +293,7 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][7][Applets][9][Configuration]
-PreloadWeight=75
+PreloadWeight=80
 
 [Containments][7][ConfigDialog]
 DialogHeight=540
