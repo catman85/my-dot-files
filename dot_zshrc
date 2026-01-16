@@ -102,8 +102,6 @@ zsh-defer source ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggest
 zsh-defer source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 zsh-defer source ~/.oh-my-zsh/custom/plugins/zsh-ctrl-shift-select/zsh-ctrl-shift-select.plugin.zsh
 zsh-defer source ~/.config/broot/launcher/bash/br 
-# thefuck alias overwrite
-zsh-defer eval $(thefuck --alias)
 
 # zsh-completions
 # To avoid issues with redundant .zcompdump cache generation (see #603), do not load zsh-completions as a standard plugin.
