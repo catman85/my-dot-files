@@ -24,7 +24,7 @@
 # you can launch broot with `br -H`).
 # A popular flag is the `g` one which displays git related info.
 #
-default_flags: -hg
+default_flags: -hgsd --show-root-fs
 
 ###############################################################
 # Terminal's title
@@ -66,16 +66,16 @@ show_selection_mark: true
 # array. You should keep the name column at the end as it has a
 # variable length.
 #
-# cols_order: [
-#     mark
-#     git
-#     size
-#     permission
-#     date
-#     count
-#     branch
-#     name
-# ]
+cols_order: [
+     mark
+     git
+     size
+     permission
+     date
+     count
+     branch
+     name
+ ]
 
 ###############################################################
 # True Colors
@@ -119,6 +119,15 @@ special_paths: {
         list: "always",
         sum: "never"
     }
+    ".git": {
+	show: never
+    }
+    "node_modules" : no-enter
+    "target"       : no-enter
+    "vendor"       : no-enter
+    ".cargo"       : no-enter
+    ".cache"       : no-enter
+    "build"        : no-enter
     # "~/useless": { "show": "never" }
     # "~/my-link-I-want-to-explore": { "list": "always" }
 }
@@ -156,8 +165,9 @@ quit_on_last_cancel: true
 #  https://dystroy.org/broot/input/#the-filtering-pattern
 #
 search_modes: {
-     <empty>: fuzzy name
-     /: regex name
+    <empty>: regex name
+    /: fuzzy path
+    z/: regex path
 }
 
 ###############################################################
