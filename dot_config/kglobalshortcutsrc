@@ -15,12 +15,6 @@ _k_friendly_name=Keyboard Layout Switcher
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
 
-[kcm_touchpad]
-Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
-Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
-Toggle Touchpad=Touchpad Toggle,Touchpad Toggle\tTouchpad Toggle\tMeta+Ctrl+Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
-_k_friendly_name=Touchpad
-
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
@@ -69,8 +63,8 @@ KZones: Activate layout 6=Meta+Num+6,none,KZones: Activate layout 6
 KZones: Activate layout 7=Meta+Num+7,none,KZones: Activate layout 7
 KZones: Activate layout 8=Meta+Num+8,none,KZones: Activate layout 8
 KZones: Activate layout 9=Meta+Num+9,none,KZones: Activate layout 9
-KZones: Cycle layouts=Ctrl+Alt+D,none,KZones: Cycle layouts
-KZones: Cycle layouts (reversed)=Ctrl+Alt+Shift+D,none,KZones: Cycle layouts (reversed)
+KZones: Cycle layouts=Meta+End,none,KZones: Cycle layouts
+KZones: Cycle layouts (reversed)=Meta+Home,none,KZones: Cycle layouts (reversed)
 KZones: Move active window down=none,none,KZones: Move active window down
 KZones: Move active window left=Meta+Ctrl+Left,none,KZones: Move active window left
 KZones: Move active window right=Meta+Ctrl+Right,none,KZones: Move active window right
