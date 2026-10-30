@@ -142,8 +142,8 @@ bindkey -M menuselect '^I' .accept-line
 # Arrow keys send ^[[A/^[[B in normal mode and ^[OA/^[OB in application cursor mode, so bind both
 bindkey '^[[B' menu-select    # Down arrow triggers menu selection
 bindkey '^[OB' menu-select
-bindkey '^[[A' .up-history    # Up arrow triggers plain history navigation
-bindkey '^[OA' .up-history
+bindkey '^[[A' up-line-or-search    # Up arrow triggers plain history navigation
+bindkey '^[OA' up-line-or-search
 # Menu navigation bindings
 bindkey -M menuselect '^[[A' up-line-or-history    # Up in menu
 bindkey -M menuselect '^[OA' up-line-or-history
