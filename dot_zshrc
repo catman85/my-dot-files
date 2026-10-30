@@ -183,7 +183,7 @@ alias la="ll --all"
 # git log replacement
 alias gl='git log --graph --pretty=oneline --abbrev-commit'
 # git diff replacement
-alias gd="git diff | diff-so-fancy"
+alias gd="git diff HEAD | diff-so-fancy"
 alias gs="git status"
 
 # openrouter ai
